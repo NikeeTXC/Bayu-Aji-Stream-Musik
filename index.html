@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda - Web Streaming Musik</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="koleksi.html">Koleksi</a></li>
+                    <li><a href="artis.html">Artis</a></li>
+                    <li><a href="video.html">Video</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Stream Musik</h2>
+                <p>Dengarkan lagu-lagu populer dari artis Indonesia</p>
+            </div>
+        </section>
+
+        <section class="player-section">
+            <div class="container">
+                <div class="player-container">
+                    <div class="album-art">
+                        <img src="images/akad.jpg" alt="Album Cover" id="albumCover">
+                    </div>
+
+                    <div class="song-info">
+                        <h3 id="songTitle">Akad</h3>
+                        <p id="artistName">Payung Teduh</p>
+
+                        <div class="progress-container">
+                            <span id="currentTime">0:00</span>
+                            <input type="range" id="progressBar" value="0" min="0" max="100">
+                            <span id="totalTime">0:00</span>
+                        </div>
+
+                        <div class="controls">
+                            <button id="prevBtn" class="control-btn"><i class="fas fa-step-backward"></i></button>
+                            <button id="playBtn" class="control-btn play-btn"><i class="fas fa-play"></i></button>
+                            <button id="nextBtn" class="control-btn"><i class="fas fa-step-forward"></i></button>
+                            <button id="muteBtn" class="control-btn"><i class="fas fa-volume-up"></i></button>
+                        </div>
+
+                        <div class="volume-control">
+                            <i class="fas fa-volume-down"></i>
+                            <input type="range" id="volumeSlider" min="0" max="100" value="50">
+                            <i class="fas fa-volume-up"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lyrics-container">
+                    <h3>Lirik Lagu</h3>
+                    <div class="lyrics-content" id="lyricsContent"> </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <audio id="audioPlayer" preload="metadata">
+    </audio>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-form">
+                <h3>Kirim Pesan</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Nama Anda" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Email Anda" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Pesan Anda" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Kirim</button>
+                </form>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Bayu Aji Sasmita | Universitas Pamulang.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

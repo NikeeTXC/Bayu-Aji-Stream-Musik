@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koleksi Lagu - Web Streaming Musik</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="koleksi.html">Koleksi</a></li>
+                    <li><a href="artis.html">Artis</a></li>
+                    <li><a href="video.html">Video</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="library">
+            <div class="container">
+                <h2>Koleksi Lagu</h2>
+                <div class="song-list">
+                    <div class="song-card" data-song="1">
+                        <img src="images/akad.jpg" alt="Album Cover">
+                        <div class="song-details">
+                            <h4>Akad</h4>
+                            <p>Payung Teduh</p>
+                        </div>
+                        <div class="song-duration">4:18</div>
+                    </div>
+
+                    <div class="song-card" data-song="2">
+                        <img src="images/tulus.jpg" alt="Album Cover">
+                        <div class="song-details">
+                            <h4>Monokrom</h4>
+                            <p>Tulus</p>
+                        </div>
+                        <div class="song-duration">3:34</div>
+                    </div>
+
+                    <div class="song-card" data-song="3">
+                        <img src="images/terbuangdalamwaktu.jpg" alt="Album Cover">
+                        <div class="song-details">
+                            <h4>Terbuang Dalam Waktu</h4>
+                            <p>Barasuara</p>
+                        </div>
+                        <div class="song-duration">4:39</div>
+                    </div>
+
+                    <div class="song-card" data-song="4">
+                        <img src="images/nina.jpg" alt="Album Cover">
+                        <div class="song-details">
+                            <h4>Nina</h4>
+                            <p>Fourtwnty</p>
+                        </div>
+                        <div class="song-duration">4:19</div>
+                    </div>
+
+                    <div class="song-card" data-song="5">
+                        <img src="images/suratcintauntukstarla.jpg" alt="Album Cover">
+                        <div class="song-details">
+                            <h4>Surat Cinta Untuk Starla</h4>
+                            <p>Virgoun</p>
+                        </div>
+                        <div class="song-duration">5:08</div>
+                    </div>
+
+                    <div class="song-card" data-song="6">
+                        <img src="images/hidupharusterusberjalan.jpg" alt="Album Cover">
+                        <div class="song-details">
+                            <h4>Kata Mereka Ini Berlebihan</h4>
+                            <p>Bernadya</p>
+                        </div>
+                        <div class="song-duration">3:02</div>
+                    </div>
+
+                    <div class="song-card" data-song="7">
+                        <img src="images/everythinguare.jpg" alt="Album Cover">
+                        <div class="song-details">
+                            <h4>Everything U Are</h4>
+                            <p>Hindia</p>
+                        </div>
+                        <div class="song-duration">3:56</div>
+                    </div>
+
+                    <div class="song-card" data-song="8">
+                        <img src="images/tanparasabersalah.jpg" alt="Album Cover">
+                        <div class="song-details">
+                            <h4>Tanpa Rasa Bersalah</h4>
+                            <p>Fabio Asher</p>
+                        </div>
+                        <div class="song-duration">4:38</div>
+                    </div>
+
+                    <div class="song-card" data-song="9">
+                        <img src="images/terlalulama.jpg" alt="Album Cover">
+                        <div class="song-details">
+                            <h4>Terlalu Lama</h4>
+                            <p>Viera</p>
+                        </div>
+                        <div class="song-duration">4:07</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <audio id="audioPlayer" preload="metadata">
+    </audio>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-form">
+                <h3>Kirim Pesan</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Nama Anda" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Email Anda" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Pesan Anda" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Kirim</button>
+                </form>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Bayu Aji Sasmita | Universitas Pamulang.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

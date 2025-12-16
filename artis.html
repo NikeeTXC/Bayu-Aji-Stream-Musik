@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artis Populer - Web Streaming Musik</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="koleksi.html">Koleksi</a></li>
+                    <li><a href="artis.html">Artis</a></li>
+                    <li><a href="video.html">Video</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="artists">
+            <div class="container">
+                <h2>Artis Populer</h2>
+                <div class="artist-grid">
+                    <div class="artist-card">
+                        <img src="images/tulus.jpg" alt="Tulus">
+                        <div class="artist-info">
+                            <h3>Tulus</h3>
+                            <p>Vocalist</p>
+                        </div>
+                    </div>
+
+                    <div class="artist-card">
+                        <img src="images/terbuangdalamwaktu.jpg" alt="Barasuara">
+                        <div class="artist-info">
+                            <h3>Barasuara</h3>
+                            <p>Band</p>
+                        </div>
+                    </div>
+
+                    <div class="artist-card">
+                        <img src="images/zonanyaman.jpg" alt="Fourtwnty">
+                        <div class="artist-info">
+                            <h3>Fourtwnty</h3>
+                            <p>Band</p>
+                        </div>
+                    </div>
+
+                    <div class="artist-card">
+                        <img src="images/everythinguare.jpg" alt="Hindia">
+                        <div class="artist-info">
+                            <h3>Hindia</h3>
+                            <p>Band</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <audio id="audioPlayer" preload="metadata">
+    </audio>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-form">
+                <h3>Kirim Pesan</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Nama Anda" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Email Anda" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Pesan Anda" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Kirim</button>
+                </form>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Bayu Aji Sasmita | Universitas Pamulang.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
