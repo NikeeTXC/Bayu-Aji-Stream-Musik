@@ -656,10 +656,6 @@ songCards.forEach((card, index) => {
 
 loadSong(currentSongIndex);
 
-
-
-
-// Mobile menu toggle functionality
 const menuToggle = document.createElement('div');
 menuToggle.classList.add('menu-toggle');
 menuToggle.innerHTML = `
@@ -681,7 +677,6 @@ document.querySelectorAll('.nav-menu ul li a').forEach(link => {
     });
 });
 
-// Contact form functionality
 document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.getElementById('contactForm');
 
@@ -693,11 +688,8 @@ document.addEventListener('DOMContentLoaded', function() {
             const email = document.getElementById('email').value;
             const message = document.getElementById('message').value;
 
-            // In a real application, you would send this data to a server
-            // For now, we'll just show an alert
             alert(`Terima kasih, ${name}! Pesan Anda telah dikirim.`);
 
-            // Reset the form
             contactForm.reset();
         });
     }
