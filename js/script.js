@@ -138,7 +138,7 @@ Menjagamu
     {
         id: 4,
         title: "Nina",
-        artist: "Fourtwnty",
+        artist: "Feast",
         src: "audio/Nina.mp3",
         cover: "images/nina.jpg",
         lyrics: `Saat engkau tertidur
